@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
 
-var request = require("request");
-
 export async function GET(req: Request) {
   const url =
     "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo";
