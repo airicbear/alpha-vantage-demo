@@ -1,9 +1,10 @@
 "use client";
 
+import IntradayResponse from "@/app/model/intraday-model";
 import { useEffect, useState } from "react";
 
 export default function IntradayPage() {
-  const [data, setData] = useState();
+  const [data, setData] = useState<IntradayResponse>();
 
   useEffect(() => {
     const fetchData = async () => {

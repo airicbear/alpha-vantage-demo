@@ -1,3 +1,4 @@
+import IntradayResponse from "@/app/model/intraday-model";
 import { NextResponse } from "next/server";
 
 export async function GET(req: Request) {
@@ -17,5 +18,5 @@ export async function GET(req: Request) {
   });
   const data = await res.json();
 
-  return NextResponse.json({ data });
+  return NextResponse.json<IntradayResponse>({ data });
 }
