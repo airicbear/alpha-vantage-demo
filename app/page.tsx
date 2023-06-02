@@ -1,8 +1,24 @@
+"use client";
+
+import {
+  Container,
+  Heading,
+  Link,
+  ListItem,
+  UnorderedList,
+} from "@chakra-ui/react";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Alpha Vantage Demo</h1>
-      <a href="/intraday">Intraday Page</a>
-    </main>
+    <Container>
+      <Heading>Alpha Vantage Demo</Heading>
+      <UnorderedList>
+        <ListItem>
+          <Link color="teal.500" href="/intraday">
+            Intraday Page
+          </Link>
+        </ListItem>
+      </UnorderedList>
+    </Container>
   );
 }

@@ -3,6 +3,8 @@
 import IntradayResponse from "@/app/model/intraday-model";
 import { useEffect, useState } from "react";
 
+import { Text } from "@chakra-ui/react";
+
 export default function IntradayPage() {
   const [data, setData] = useState<IntradayResponse>();
 
@@ -28,7 +30,7 @@ export default function IntradayPage() {
 
   return (
     <main>
-      <div>{JSON.stringify(data)}</div>
+      <Text>{JSON.stringify(data)}</Text>
     </main>
   );
 }
